@@ -1,0 +1,77 @@
+body {
+  background: #fafafa;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+}
+
+.dino {
+  position: absolute;
+  left: 100px;
+  bottom: 0px;
+  /*background-image: url(/img/dino.png);*/
+  width: 60px;
+  height: 60px;
+}
+
+.cactus {
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  bottom: 0px;
+  /*background-image: url(/img/cactus.png);*/
+}
+
+.game-over {
+  text-align: center;
+  color: #666;
+  margin: 50px 0;
+  font-family: arial;
+}
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 100px;
+  background-image: url('/img/background.png');
+  background-repeat: repeat-x;
+  animation: slideright 500s infinite linear;
+  -webkit-animation: slideright 500s infinite linear;
+  width: 100%;
+  height: 200px;
+}
+
+.info{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  top: 10px;
+}
+.box{
+  margin: 20px;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(218, 218, 218, 0.2);
+}
+#play{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+  background: url(/img/start.png)
+}
+#play:hover{
+  cursor: pointer;
+}
