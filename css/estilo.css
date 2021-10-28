@@ -3,6 +3,8 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   margin-bottom: 20px;
+  font-family: 'PressStart2PRegular';
+  height: 100%;
 }
 
 .dino {
@@ -25,8 +27,7 @@ body {
 .game-over {
   text-align: center;
   color: #666;
-  margin: 50px 0;
-  font-family: arial;
+  margin: 100px 0;
 }
 
 @keyframes slideright {
@@ -52,26 +53,32 @@ body {
 .info{
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   top: 10px;
 }
 .box{
   margin: 20px;
-  width: 300px;
-  height: 100px;
+  width: 250px;
+  height: 80px;
   border-radius: 20px;
   text-align: center;
-  background-color: rgba(218, 218, 218, 0.2);
 }
+
 #play{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin: auto;
-  width: 200px;
-  height: 100px;
-  background: url(/img/start.png)
+  width: 240px;
+  height: 110px;
 }
 #play:hover{
   cursor: pointer;
+  transform: scale(1.1);
+    transition: all 0.5s;
 }

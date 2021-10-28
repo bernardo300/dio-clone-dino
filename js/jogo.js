@@ -14,13 +14,13 @@ function contarTempo(){
   var tempo = setInterval(()=>{
    tempoJogo++;
    console.log(tempoJogo)
-   textTempo.textContent = 'Time: '+ tempoJogo;
-   textScore.textContent = 'Score: '+ (pontos);
+   textTempo.textContent = 'time: '+ tempoJogo;
+   textScore.textContent = 'score: '+ (pontos);
 
    if(isGameOver){
      clearInterval(tempo)
    }
-   if(tempoJogo>=10){
+   if(tempoJogo>=20){
      document.body.style.background= '#838687'
      background.style.background = 'url(/img/background-preto.png)'
    }
